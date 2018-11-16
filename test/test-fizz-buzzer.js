@@ -21,12 +21,13 @@ describe('fizzBuzz', function(){
         });
     });
     it('should throw an error', function(){
-        const illegalInput= [["number"], 
-        ["1"], 
-        [null], 
-        [false], 
-        [true], 
-        [NaN]
+        const illegalInput= ['number', 
+        '1', 
+        null, 
+        false, 
+        true,
+        function() {},
+        [1,3,7,5]
         ];
         illegalInput.forEach(function(input){
             expect(function(){
